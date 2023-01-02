@@ -1,0 +1,503 @@
+*{
+    margin:0;
+    padding:0;
+}
+.body{
+    background-color:#f3f5f7;
+    height: 3000px;
+}
+.clearfix:before,.clearfix:after {
+    content:"";
+    display:table; 
+  }
+  .clearfix:after {
+    clear:both;
+  }
+  .clearfix {
+     *zoom:1;
+  }  
+li{
+    list-style:none;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+.w{
+    width: 1200px;
+    margin:0 auto;
+}
+.header{
+    height: 45px;
+    margin:30px auto;
+}
+.logo{
+    float:left;
+}
+.nav{
+    float:left;
+    margin:auto 100px auto 70px;
+}
+.nav li{
+    float:left;
+    margin:auto 0px;
+    margin-right:15px;
+    padding:10px;  
+}
+.nav li a{
+    font-size:18px;
+}
+.nav li:hover{
+    border-bottom:2px solid #00a4ff;
+}
+.search{/*input 与 button是行内块元素，之间有边距*/
+    float:left;
+    width: 412px;
+}
+.search input{
+    float:left;
+    height:40px;
+    width:360px;
+    border:1px solid #00a4ff;
+    border-right:none;
+    line-height: 40px;
+}
+/*唯一的问题是点击输入文字时边框变黑*/
+.search button{
+    /*button默认有边框*/
+    float:left;
+    width: 50px;
+    height: 42px;
+    background-image: url('images/fa-search.png');
+    line-height: 42px;
+    border:none;
+}
+.user{
+    float:left;
+    width: 117px;
+    height: 30px;
+    margin:0 29px 0 27px;
+    line-height:58px;
+}
+/*banner部分开始*/
+.banner{
+    height:422px;
+    background-color: #1c036c;
+}
+.banner .w{
+    margin:0 auto;
+    height:422px;
+    background-image: url('images/banner2.png');
+}
+.banner  .subnav{
+    float:left;
+    width:190px;
+    height:410px;
+    margin-top:12px;
+    background:rgba(19,1,75,0.3);
+}
+.banner  .subnav ul{
+    margin:15px 21px 26px 28px;
+}
+.banner  .subnav ul li a{
+    display:block;
+    margin-bottom:27px; 
+    font-size:14px;
+    color:#e9e9ec;
+}
+.banner  .subnav ul li a span{
+    float:right;
+}
+.banner  .subnav a:hover{
+    color:#00a4ff;
+}
+.banner .w .course{
+    float:right;
+    width: 230px;
+    height:300px;
+    margin-top: 48px;
+    margin-bottom:73px;
+    background-color: #fff;
+}
+.banner  .course .name{
+    height:48px;
+    font-size:18px;
+    color:#ffffff;
+    background-color: #9bceea;
+    text-align: center;
+    line-height:48px;
+    border:1px solid transparent;
+}
+.banner  .course .body1{
+    margin:0 20px;
+    margin-top:10px;
+    height:180px;
+}
+.banner .course .body1 ul li{
+    height:30px;
+    padding-top:15px;
+    padding-bottom:15px;
+    border-bottom: 1px solid #acacac;
+}
+.banner .course .body1 ul li h4{
+    font-size:14px;
+    color:#7d7d7d;
+}
+.banner .course .body1 ul li p{
+    font-size:12px;
+    color:#a5a5a5;
+}
+.banner .course .all{
+    width: 200px;
+    height: 40px;
+    margin:7px auto 23px auto;
+    border:2px solid #00a4ff;
+    color:#00a4ff;
+    line-height:40px;
+    text-align:center;
+}
+/*banner部分结束*/
+/*精品部分开始*/
+.goods {
+    height:63px;
+    margin-top:5px;
+    background-color:#fff;
+    box-shadow:0px 2px 3px rgba(0,0,0, 0.1);
+}
+.goods .title{
+    float:left;
+    line-height:63px;
+    font-size:16px;
+    color:#00a4ff;
+    margin:auto 30px;
+}
+.goods .item{
+    float:left;
+    line-height:63px;
+}
+.goods .item ul li{
+    display:inline-block;
+}
+.goods .item ul li a{
+    display:inline-block;
+    width: 124px;
+    height: 16px;
+    line-height:16px;
+    font-size:16px;
+    text-align:center;
+    border-left:1px solid #bfbfbf;
+}
+.goods .item ul li a:hover{
+    color:#00a4ff;
+}
+.goods .mod{
+    float:right;
+    line-height:63px;
+    font-size:14px;
+    color:#00a4ff;
+    margin:0 30px;
+}
+/*精品部分结束*/
+/*精品推荐大模块开始*/
+.box{
+    height: 612px;
+    margin-top:22px;
+}
+.box .box-hd{
+    height: 55px;
+}
+.box .box-hd h3{
+    float:left;
+    font-size:20px;
+    line-height:55px;
+    color:#494949;
+}
+.box .box-hd a{
+    float:right;
+    font-size:12px;
+    line-height:55px;
+    margin-right:30px;
+    color:#a5a5a5;
+}
+/*把父亲的宽度修改得足够宽能放下五个li*/
+.box .box-bd{
+    width:1215px;
+}
+.box .box-bd li{
+    float:left;
+    width: 228px;
+    height: 270px;
+    background-color: blue;
+    margin:0 15px 12px 0;
+    background-image: url('images/li2.png');
+}
+/*精品推荐大模块结束*/
+/*编程入门部分开始*/
+.coding{
+    height: 447px;
+    margin-top:36px;
+}
+.coding .coding-hd{
+    height:55px;
+}
+.coding .coding-hd h3{
+    float:left;
+    font-size:20px;
+    color:#494949;
+    line-height:55px;
+    font-weight:normal;
+}
+.coding .coding-hd .level{
+    float:left;
+    margin-left:350px;
+}
+.coding .coding-hd .level a{
+    float:left;
+    font-size:12px;
+    line-height:55px;
+    padding-right:70px;
+    color:#868686;
+}
+.coding .coding-hd .level a:hover{
+    color:#00a4ff;
+}
+.coding .coding-hd #link{
+    float:right;
+    font-size:12px;
+    margin-right:30px;
+    color:#a5a5a5;
+    line-height:55px;
+}
+.coding .coding-bd .coding-bd-l{
+    float:left;
+    height:392px;
+}
+.coding .coding-bd .coding-bd-r{
+    float:right;
+    width: 972px;
+    height:392px;
+}
+.coding .coding-bd .coding-bd-r img{
+    float:right;
+    width: 960px;
+}
+.coding .coding-bd .coding-bd-r .imag ul li{
+    float:right;
+    width: 228px;
+    height: 270px;
+    margin-left:15px;
+    margin-top:22px;
+    background-color: pink;
+    background-image: url('images/coding3.png');
+}
+/*编程入门部分结束*/
+/*数据分析师板块开始*/
+.ana{
+    height: 447px;
+    margin-top:36px;
+}
+.ana .ana-hd{
+    height:55px;
+}
+.ana .ana-hd h3{
+    float:left;
+    font-size:20px;
+    color:#494949;
+    line-height:55px;
+    font-weight:normal;
+}
+.ana .ana-hd .level{
+    float:left;
+    margin-left:350px;
+}
+.ana .ana-hd  .level a{
+    float:left;
+    font-size:12px;
+    line-height:55px;
+    padding-right:70px;
+    color:#868686;
+}
+.ana .ana-hd  .level a:hover{
+    color:#00a4ff;
+}
+.ana .ana-hd  #link{
+    float:right;
+    font-size:12px;
+    margin-right:30px;
+    color:#a5a5a5;
+    line-height:55px;
+}
+.ana .ana-bd .ana-bd-l{
+    float:left;
+    height:392px;
+}
+.ana .ana-bd .ana-bd-r{
+    float:right;
+    width: 972px;
+    height:392px;
+}
+.ana .ana-bd .ana-bd-r img{
+    float:right;
+    width: 960px;
+}
+.ana .ana-bd .ana-bd-r .imag ul li{
+    float:right;
+    width: 228px;
+    height: 270px;
+    margin-left:15px;
+    margin-top:22px;
+    background-color: pink;
+    background-image: url('images/coding3.png');
+}
+/*数据分析师板块结束*/
+/*机器学习板块开始*/
+.mech{
+    margin-top:36px;
+}
+.mech .mech-hd{
+    height:55px;
+}
+.mech .mech-hd h3{
+    float:left;
+    font-size:20px;
+    color:#494949;
+    line-height:55px;
+    font-weight:normal;
+}
+.mech .mech-hd .level{
+    float:left;
+    margin-left:290px;
+}
+.mech .mech-hd  .level a{
+    float:left;
+    font-size:12px;
+    line-height:55px;
+    padding-right:70px;
+    color:#868686;
+}
+.mech .mech-hd  .level a:hover{
+    color:#00a4ff;
+}
+.mech .mech-hd  #link{
+    float:right;
+    font-size:12px;
+    margin-right:30px;
+    color:#a5a5a5;
+    line-height:55px;
+}
+.mech .mech-bd{
+    float:left;
+    width:1215px;
+}
+.mech .mech-bd ul li{
+    float:left;
+    width:228px;
+    height:270px;
+    margin:0px 15px 0 0;
+    background-image: url('images/coding3.png');
+}
+/*机器学习结束*/
+/*前端开发开始*/
+.web{
+    margin-top:36px;
+    overflow:hidden;
+}
+.web .web-hd{
+    height:55px;
+}
+.web .web-hd h3{
+    float:left;
+    font-size:20px;
+    color:#494949;
+    line-height:55px;
+    font-weight:normal;
+}
+.web .web-hd .level{
+    float:left;
+    margin-left:290px;
+}
+.web .web-hd  .level a{
+    float:left;
+    font-size:12px;
+    line-height:55px;
+    padding-right:70px;
+    color:#868686;
+}
+.web .web-hd  .level a:hover{
+    color:#00a4ff;
+}
+.web .web-hd  #link{
+    float:right;
+    font-size:12px;
+    margin-right:30px;
+    color:#a5a5a5;
+    line-height:55px;
+}
+.web .web-bd{
+    float:left;
+    width:1215px;
+}
+.web .web-bd ul li{
+    float:left;
+    width:228px;
+    height:270px;
+    margin:0px 15px 0 0;
+    background-image: url('images/c1.png');
+}
+/*前端开发结束*/
+/*footer开始*/
+.footer{
+    height: 420px;
+    margin-top:40px;
+}
+.footer .copyright{
+    float:left;
+    width:580px;
+    height:135px;
+    margin-right:100px;
+    margin-top:32px;
+    margin-left:20px;
+}
+.footer .copyright img{
+    margin-bottom:22px;
+}
+.footer .copyright button{
+    width: 120px;
+    height: 36px;
+    margin-top:22px;
+    border:1px solid #00a4ff;
+    color:#00a4ff;
+    font-size:16px;
+    text-align:center;
+    line-height:36px;
+    background-color: #fff;
+}
+.footer .links{
+    float:left;
+    width: 480px;
+    height: 150px;
+    margin-top:32px;
+    margin-right:20px;
+    font-size:12px;
+}
+.footer .links h3{
+    font-weight: normal;
+    font-size:16px;
+    margin-bottom:14px;
+}
+.footer .links li{
+    font-size:12px;
+    margin-bottom:8px;
+}
+.footer .links .link1{
+    float:left;
+    margin-right:146px;
+}
+.footer .links .link2{
+    float:left;
+}
+.footer .links .link3{
+    float:right;
+}
+/*footer结束*/
+
